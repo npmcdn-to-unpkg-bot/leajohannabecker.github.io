@@ -12,6 +12,7 @@ body{
 
 #header {
   position: fixed;
+  z-index: 2;
   top: 10px;
   font-size: 12px;
   width: 100%;
@@ -19,11 +20,13 @@ body{
   background-color: rgba(255, 255, 255, 0.9);;
 }
 
+
 a:link {text-decoration: none; color: #000000}
 a:active {text-decoration: none; color: #000000}
 a:visited {text-decoration: none; color: #000000}
-a:hover { text-decoration: none; color: #D3D3D3}
-
+a:hover {text-decoration: none; color: #D3D3D3}
+a:valid {text-decoration: none; color: #D3D3D3}
+a.active {color: #D3D3D3;}
 
 nav ul li {
   display: inline;
@@ -38,11 +41,22 @@ nav
   right: 20px;
 }
 
+.page{
+  height: 100%;
+}
+
+.pic-container{
+  width:100%;
+  white-space:nowrap;
+  overflow-x:inherit;
+  overflow-y:hidden;
+}
+
 .row{
+  position: absolute;
   margin-top: 210px;
   height: 290px;
   width: 100%;
-  background-color: white;
 }
 
 .bilder{
@@ -54,9 +68,14 @@ nav
   display: inline-block;
 }
 
+/* CSS für Unterseiten */
+
+.wrapper {
+  padding-top: 50px;
+}
+
 .column{
   width: 50%;
-  margin-top: 100px;
   margin-left: 110px;
 }
 
