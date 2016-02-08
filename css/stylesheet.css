@@ -45,18 +45,12 @@ nav
   height: 100%;
 }
 
-.pic-container{
-  width:100%;
-  white-space:nowrap;
-  overflow-x:inherit;
-  overflow-y:hidden;
-}
 
 .row{
   position: absolute;
   margin-top: 210px;
   height: 290px;
-  width: 1000px;
+  width: 100%;
 }
 
 .bilder{
@@ -84,6 +78,8 @@ nav
 
 .text{
   display: inline-block;
+  width: 500px;
+  margin-left: 50px;
 }
 
 /* CSS für Unterseiten */

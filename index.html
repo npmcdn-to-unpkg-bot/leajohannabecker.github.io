@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <title>Lea Becker</title>
   <link rel="stylesheet" href="css/stylesheet.css" />
-  <link rel="stylesheet" href="css/flickity.css" media="screen">
-  <script src="js/flickity.pkgd.min.js"></script>
-  <script src="js/scroll.js"></script>
+  <link rel="stylesheet" href="css/flickity.css" />
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.css">
+  <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
 </head>
 
 <body>
@@ -31,34 +31,31 @@
 </div>
 
 <div id="home" class="page">
-  <div class="pic-container">
-    <div class="row">
-      <div class="link">
-        <a href="sketches.html#orange">SKETCHES // ORANGE</a>
-        <img class="bilder" src="images/orange/1.jpg"/>
-      </div>
-      <a href="projects.html#memory"><img class="bilder" src="images/memory/8.jpg"/></a>
-      <a href="photos.html#blind-moments"><img class="bilder" src="images/blind-moments/4.jpg"/></a>
+  <div class="row">
+    <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+        <a href="sketches.html#orange"><img class="bilder" src="images/orange/1.jpg"/></a>
+        <a href="projects.html#memory"><img class="bilder" src="images/memory/8.jpg"/></a>
+        <a href="photos.html#blind-moments"><img class="bilder" src="images/blind-moments/4.jpg"/></a>
     </div>
   </div>
 </div>
 
 <div id="photos" class="page">
-  <div class="pic-container">
-    <div class="row">
-      <a href="photos.html#blind-moments"><img class="bilder" src="images/blind-moments/4.jpg"/></a>
-      <a href="photos.html#open-your-eyes"><img class="bilder" src="images/open-your-eyes/1.jpg"/></a>
-      <a href="photos.html#under-the-ground"><img class="bilder" src="images/underground/IMG_7878 Kopie 2.jpg"/></a>
-      <a href="photos.html#favourites"><img class="bilder" src="images/favourites/7.jpg"/></a>
-      <a href="photos.html#golden"><img class="bilder" src="images/golden/3.jpg"/></a>
-      <a href="photos.html#autumn-strolling"><img class="bilder" src="images/autumn-strolling/6.jpg"/></a>
+  <div class="row">
+    <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+        <a href="photos.html#blind-moments"><img class="bilder" src="images/blind-moments/4.jpg"/></a>
+        <a href="photos.html#open-your-eyes"><img class="bilder" src="images/open-your-eyes/1.jpg"/></a>
+        <a href="photos.html#under-the-ground"><img class="bilder" src="images/underground/IMG_7878 Kopie 2.jpg"/></a>
+        <a href="photos.html#favourites"><img class="bilder" src="images/favourites/7.jpg"/></a>
+        <a href="photos.html#golden"><img class="bilder" src="images/golden/3.jpg"/></a>
+        <a href="photos.html#autumn-strolling"><img class="bilder" src="images/autumn-strolling/6.jpg"/></a>
     </div>
   </div>
 </div>
 
 <div id="sketches" class="page">
-  <div class="pic-container">
-    <div class="row">
+  <div class="row">
+    <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
       <a href="sketches.html#orange"><img class="bilder" src="images/orange/1.jpg"/></a>
       <a href="sketches.html#water"><img class="bilder" src="images/water/1.jpg"/></a>
       <a href="sketches.html#bus"><img class="bilder" src="images/bus/1.jpg"/></a>
@@ -67,9 +64,9 @@
   </div>
 </div>
 
-<div id="projects" class="page">
-  <div class="pic-container">
-    <div  class="row">
+<div id="projects" class="page" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+  <div class="row">
+    <div class="gallery js-flickity">
       <a href="projects.html#memory"><img class="bilder" src="images/memory/8.jpg"/></a>
       <a href="projects.html#guide"><img class="bilder" src="images/guide/1.jpg"/></a>
     </div>
@@ -79,16 +76,18 @@
 <div id="about" class="page">
   <div class="row">
     <img class="bilder" src="images/IMG_7893.jpg"/>
-    <div class="text"><p>Hallo. Ich bin ein kleiner Blindtext.
-      <br>Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen,
-      <br>was es bedeutet, ein blinder Text zu sein: Man macht keinen Sinn.
-      <br>Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und
-      <br>umgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb
-      <br>ein schlechterer Text als andere? Na gut, ich werde nie in den
-      <br>Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht.
-      <br>Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese
-      <br>Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft,
-      <br>wovon all die richtigen und wichtigen Texte meist nur träumen.</p></div>
+      <div class="text">
+        <p>
+          Hello there!<br><br>My name is Lea, I am 19 years old and I was born and raised in Düsseldorf.<br><br>
+          After graduating high school with the Abitur in 2014, I spent six months in London,<br>where I was working as an Au Pair and exploring the city.<br><br>
+          Since October 2015 I am now living in Berlin and studying Communication Design at the HTW in Berlin-Oberschöneweide.<br>
+          <br>This website features some of my works. <br><br>
+          Most of the things you can see here were made for my portfolio with which I applied
+          at the HTW, but you can also find personal photos, little side-projects and random sketches.<br>
+          <br>If you like what you see, I would be more than happy if you drop me a line at <br><a href="mailto:lea-becker@gmx.net">lea-becker@gmx.net</a>.<br>
+          <br>I hope you enjoy!
+        </p>
+      </div>
   </div>
 </div>
 
