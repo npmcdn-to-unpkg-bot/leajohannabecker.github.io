@@ -56,6 +56,9 @@ nav
   display: inline-block;
   height: 100%;
 }
+
+/* gallery */
+
 .gallery {
   margin-top: 200px;
 }
@@ -78,11 +81,16 @@ nav
   width: 229px;
 }
 
-.text {
-  display: inline;
-  width: 350px;
+.flickity-page-dots {
+  display: none;
 }
 
+
+.text {
+  display: inline-block;
+  width: 500px;
+  margin-left: 50px;
+}
 
 /* CSS für Unterseiten */
 
@@ -98,4 +106,10 @@ nav
 .post{
   display: block;
   width: 100%;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+
 }
