@@ -45,11 +45,10 @@ nav
   height: 100%;
 }
 
-
 .row{
   position: absolute;
-  margin-top: 210px;
-  height: 290px;
+  margin-top: 200px;
+  height: 350px;
   width: 100%;
 }
 
@@ -57,30 +56,33 @@ nav
   display: inline-block;
   height: 100%;
 }
-
-.link{
-  display:inline-block;
+.gallery {
+  margin-top: 200px;
 }
 
-.link a{
-  display: none;
+.gallery-cell {
+  width: 33%;
+  height: 350px;
+  margin-right: 10px;
 }
 
-.link:hover a{
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 435px;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 150px 0 0 100px;
-  color: rgba(0, 0, 0, 0.5);
+.gallery-cell.size-large {
+  width: 525px;
 }
 
-.text{
-  display: inline-block;
-  width: 500px;
-  margin-left: 50px;
+.gallery-cell.size-597 {
+  width: 597px;
 }
+
+.gallery-cell.size-229 {
+  width: 229px;
+}
+
+.text {
+  display: inline;
+  width: 350px;
+}
+
 
 /* CSS für Unterseiten */
 
