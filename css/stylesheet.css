@@ -116,7 +116,8 @@ nav {
 .post {
   display: block;
   width: 100%;
-  font-size: 200%;
+  font-size: 300%;
+  font-weight: lighter;
 }
 
 /* About Page */
