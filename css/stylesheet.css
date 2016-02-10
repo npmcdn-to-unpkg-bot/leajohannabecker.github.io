@@ -139,6 +139,9 @@ nav {
 @media  only screen and (max-device-width: 641px) and (orientation: portrait),
         /*only screen and (max-width: 640px)*/ {
 
+  body {
+    font-size: 150%;
+  }
 
   .header-desktop {
     display: none;
