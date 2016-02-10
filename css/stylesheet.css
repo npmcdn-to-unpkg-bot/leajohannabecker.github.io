@@ -140,9 +140,9 @@ nav {
         /*only screen and (max-width: 640px)*/ {
 
   p {
-    font-size: 150%;
+    font-size: 200%;
   }
-  
+
   .header-desktop {
     display: none;
   }
