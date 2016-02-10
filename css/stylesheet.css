@@ -116,6 +116,7 @@ nav {
 .post {
   display: block;
   width: 100%;
+  font-size: 150%;
 }
 
 /* About Page */
@@ -139,9 +140,6 @@ nav {
 @media  only screen and (max-device-width: 641px) and (orientation: portrait),
         /*only screen and (max-width: 640px)*/ {
 
-  p {
-    font-size: 200%;
-  }
 
   .header-desktop {
     display: none;
