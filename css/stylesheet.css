@@ -186,6 +186,22 @@ nav {
     height: 500px;
   }
 
+  .gallery-cell.size-large {
+    width: 750px;
+  }
+
+  .gallery-cell.size-597 {
+    width: 853px;
+  }
+
+  .gallery-cell.size-467 {
+    width: 668px;
+  }
+
+  .gallery-cell.size-229 {
+    width: 428px;
+  }
+
   .column {
     margin-left: 0;
     width: 100%;
