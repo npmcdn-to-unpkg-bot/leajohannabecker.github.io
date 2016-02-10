@@ -60,6 +60,17 @@ nav {
   height: 100%;
 }
 
+.bilder-about {
+  display: inline-block;
+  height: 100%;
+}
+
+.text {
+  display: inline-block;
+  width: 500px;
+  margin-left: 50px;
+}
+
 /* gallery */
 
 .gallery {
@@ -92,12 +103,6 @@ nav {
   display: none;
 }
 
-.text {
-  display: inline-block;
-  width: 500px;
-  margin-left: 50px;
-}
-
 /* CSS für Unterseiten */
 
 .wrapper {
@@ -116,7 +121,10 @@ nav {
 
 /* responsive */
 
+/*
 @media only screen and (max-width: 640px) {
+*/
+@media only screen and (max-device-width: 641px) and (orientation: portrait) {
 
   .header-desktop {
     display: none;
@@ -167,6 +175,14 @@ nav {
 
   .wrapper.first {
     padding-top: 0;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  .bilder-about {
+    width: 50%;
   }
 
 
