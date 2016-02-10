@@ -112,7 +112,7 @@ nav {
 
 /* responsive */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 640px) {
 
   .header-desktop {
     display: none;
