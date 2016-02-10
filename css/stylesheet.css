@@ -157,6 +157,11 @@ nav {
     text-align: center;
     font-size: 300%;
     left: 0;
+    background-color: black;
+  }
+
+  .title a {
+    color: white;
   }
 
   nav {
