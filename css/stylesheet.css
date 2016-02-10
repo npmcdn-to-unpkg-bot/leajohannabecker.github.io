@@ -60,15 +60,6 @@ nav {
   height: 100%;
 }
 
-.bilder-about {
-  display: inline-block;
-}
-
-.text {
-  display: inline-block;
-  width: 500px;
-  margin-left: 50px;
-}
 
 /* gallery */
 
@@ -119,15 +110,21 @@ nav {
 }
 
 /* About Page */
-.text, .bilder-about {
-  width: 50%;
-  float: left;
+
+.about {
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+.bild-about{
+  width: 525px;
+  margin-right: 20px;
 }
 
 .text {
-  width: calc(50% - 80px);
-  float: left;
-  margin: 0 40px
+  width: 525px;
+  text-align: justify;
+  display: inline-block;
 }
 
 
@@ -137,7 +134,7 @@ nav {
 @media only screen and (max-width: 640px) {
 */
 @media  only screen and (max-device-width: 641px) and (orientation: portrait),
-        only screen and (max-width: 640px) {
+        /*only screen and (max-width: 640px)*/ {
 
 
   .header-desktop {
