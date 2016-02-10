@@ -116,7 +116,6 @@ nav {
 .post {
   display: block;
   width: 100%;
-  font-size: 300%;
 }
 
 /* About Page */
@@ -138,7 +137,7 @@ nav {
 @media only screen and (max-width: 640px) {
 */
 @media  only screen and (max-device-width: 641px) and (orientation: portrait),
-        /*only screen and (max-width: 640px)*/ {
+        only screen and (max-width: 640px) {
 
 
   .header-desktop {
@@ -188,6 +187,10 @@ nav {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .post {
+    font-size: 300%;
   }
 
   .wrapper.first {
