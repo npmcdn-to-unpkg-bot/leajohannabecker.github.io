@@ -1,10 +1,10 @@
-body{
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
 
 
-.title{
+.title {
   position: fixed;
   top: 10px;
   left: 20px;
@@ -20,6 +20,19 @@ body{
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.header-mobile {
+  display: none;
+}
+
+#header-mobile {
+  position: fixed;
+  z-index: 2;
+  top: 10px;
+  font-size: 12px;
+  width: 100%;
+  height: 90px;
+  background-color: red;
+}
 
 a:link {text-decoration: none; color: #000000}
 a:active {text-decoration: none; color: #000000}
@@ -32,27 +45,27 @@ nav ul li {
   display: inline;
   list-style-type: none;
   padding: 10px;
+  background-color: pink;
 }
 
-nav
-{
+nav {
   position: fixed;
   top: 10px;
   right: 20px;
 }
 
-.page{
+.page {
   height: 100%;
 }
 
-.row{
+.row {
   position: absolute;
   margin-top: 200px;
   height: 350px;
   width: 100%;
 }
 
-.bilder{
+.bilder {
   display: inline-block;
   height: 100%;
 }
@@ -85,7 +98,6 @@ nav
   display: none;
 }
 
-
 .text {
   display: inline-block;
   width: 500px;
@@ -103,13 +115,50 @@ nav
   margin-left: 110px;
 }
 
-.post{
+.post {
   display: block;
   width: 100%;
 }
 
 /* responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  #header-mobile {
+    position: inherit;
+  }
+
+  .title {
+    position: inherit;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 150%;
+  }
+
+  nav {
+    display: block;
+    position: inherit;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    list-style-type: none;
+  }
+
 
 }
